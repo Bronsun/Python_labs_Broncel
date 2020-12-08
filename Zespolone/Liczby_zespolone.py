@@ -1,5 +1,5 @@
 class Zespolona:
-    def __init__(self,rel,im):
+    def __init__(self,rel=0,im=0):
         self.rel = rel
         self.im = im
     def __repr__(self):
@@ -26,17 +26,6 @@ class Zespolona:
         return Zespolona((sr*op+si*oi)/r, (si*op-sr*oi)/r)
 
 
-
-if __name__=="__main__":
-    print("Kalkulator liczb zespolonych (dodawanie,odejmowanie,mnozenie,dzielenie): ")
-    equal= []
-    equal = input("Podaj równanie (format a+bj): ")
-    for i in equal:
-        if i=='j':
-            
-            x = equal.index(i) -1
-            x+=1
-            print(x)
         
             
         
